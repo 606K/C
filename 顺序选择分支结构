@@ -51,7 +51,6 @@ int main(){
         case 7:
             printf("星期日");
             break;
-
     }
     return 0;
 }
