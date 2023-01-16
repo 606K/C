@@ -1,14 +1,58 @@
+//C语言程序基本框架
+#include <stdio.h> || “stdio.h”
+int main(){     //main 是主函数有且只有一个
+
+    return 0;
+}
+
+%d打印整型int || %c打印字符型char || %lf双精度double || %f打印float单精度
+
+《1》输入1——100的奇数
 #include <stdio.h>
 #include "windows.h"
-//输入1——100的奇数，% 取模，while 循环
+//% 取模，while 循环
 int main(){
     system("chcp 65001>nul");
     int q=1,sum;
     while(q<=100){
-        if(q%2==1)
+        if(q%2==1)  
             printf("%d ",q);
         q++;
     }
 
     return 0;
 }
+
+//switch case 语句
+《2》输入星期一至星期天
+#include <stdio.h>
+int main(){
+    int day;
+    scanf("%d",&day);
+    switch (day){
+        case 1:
+        printf("星期一");
+        break;
+        case 2:
+            printf("星期二");
+            break;
+        case 3:
+            printf("星期三");
+            break;
+        case 4:
+            printf("星期四");
+            break;
+        case 5:
+            printf("星期五");
+            break;
+        case 6:
+            printf("星期六");
+            break;
+        case 7:
+            printf("星期日");
+            break;
+
+    }
+    return 0;
+}
+
