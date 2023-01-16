@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "windows.h"
+//输入1——100的奇数，% 取模，while 循环
+int main(){
+    system("chcp 65001>nul");
+    int q=1,sum;
+    while(q<=100){
+        if(q%2==1)
+            printf("%d ",q);
+        q++;
+    }
+
+    return 0;
+}
