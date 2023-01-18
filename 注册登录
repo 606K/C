@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "windows.h"
+int main() {
+    system("chcp 65001 > nul");
+    int i,ch;
+    char name[20]={0};
+    char posswod[20]={0};
+    printf("请输入用户名：");
+    scanf("%s",&name);
+    printf("请输入密码：");
+    scanf("%s",&posswod); //%s 字符串
+    while((ch=getchar()) !='\n');//循环 
+    printf("Y/Z \n");
+    i=getchar();
+    if(i=='Y'){
+        printf("确认成功！");
+
+    }else{
+        printf("放弃确认");
+    }
+    return 0;
+}
+
